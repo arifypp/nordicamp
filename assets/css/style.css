@@ -316,7 +316,7 @@ Buttons
   color:#fff;
 }
 .btn-green{
- background-color: #33cc99;
+ background-color: #1278aa;
  color: #fff;
 }
 .btn-green:hover,.btn-green:focus{
@@ -766,8 +766,8 @@ Hero
   right: -180px; 
 }
 .slider-image .slick-dots li button {
- background: #33cc99;
- color: #33cc99;
+ background: #1278aa;
+ color: #1278aa;
  height: 12px;
  width: 8px;
  border-radius: 50%;
@@ -1016,7 +1016,7 @@ footer p.sucess-message {
 
 }
 #scrollUp{
-  background: #33cc99;
+  background: #1278aa;
   border-radius:50%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;

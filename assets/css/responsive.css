@@ -1,4 +1,7 @@
  @media only screen and (max-width: 767px) {
+    section#home {
+        background: linear-gradient(#ffffffc4, #ffffff), url(../images/headertop.png) no-repeat top center;
+    }
      .hero:after, .slider-image .slick-dots, .slider-avatar{
          display: none!important;
     }
