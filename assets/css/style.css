@@ -812,7 +812,7 @@ Hero
   outline: none;
 }
 section#home {
-  background: linear-gradient(#ffffffc4, #ffffff), url(../images/headertop.png) no-repeat center center;
+  background: linear-gradient(#ffffffc4, #ffffff), url(../images/headertop.png) no-repeat top center;
 }
 
 /*----------------------------------------
