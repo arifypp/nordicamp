@@ -786,9 +786,20 @@ Hero
   position: relative;
   top: 50px;  
 }
-.icobutton-arrow img{
+.icobutton-arrow img {
   width: 35px;
   cursor: pointer;
+  animation-name: arrow;
+  animation: arrow 5s infinite;
+  animation-delay: 1s;
+}
+@keyframes arrow {
+  0% {transform:translateY(0px);
+      animation-timing-function:ease-in-out;}
+  
+  50% {transform:translateY(80px);
+     animation-timing-function:ease-in-out;}
+
 }
 
 .icobutton {
