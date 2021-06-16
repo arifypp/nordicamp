@@ -9,8 +9,8 @@
          padding-top: 100px;
     }
      .hero-text h1{
-         font-size: 45px;
-         line-height: 48px;
+        font-size: 24px;
+        line-height: 40px;
     }
      .menu-nav .menu-navigation-wrapper{
          padding: 40px 5% 40px calc(5% + 30px);
@@ -44,7 +44,8 @@
          height: 100%;
     }
      .hero-text h2 {
-         font-size: 40px;
+        color: #333;
+        font-size: 30px;
     }
      .hero-text p{
          line-height: 26px;
@@ -61,8 +62,8 @@
          top: 15%;
          left: 25%;
     }
-     .title-h2 {
-         font-size: 35px;
+    .title-h2 {
+        font-size: 28px;
     }
      .subscribe-form .form-control{
          width:90%;
@@ -171,6 +172,10 @@
     }
     .service-block{
     margin-bottom: 30px!important;    
+    }
+    .right-nav ul li:nth-child(2) {
+        position: absolute;
+        bottom: 25px;
     }
 }
  @media only screen and (max-width: 320px) {

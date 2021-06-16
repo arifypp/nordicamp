@@ -90,8 +90,8 @@
                 <div class="menu-half-block">
                     <address>
                         <ul class="menu-contact-info">
-                            <li><a href="mailto:">post@nordiccamp.no</a></li>
-                            <li>46 40 40 46 </li>
+                            <li><a href="mailto:post@nordiccamp.no">post@nordiccamp.no</a></li>
+                            <li><a href="tel:46 40 40 46">46 40 40 46 </a> </li>
                             <li>
                                 <span>Hovedgata 39 4250.</span>
                                 <!-- <span>NY 10243</span> -->
@@ -160,10 +160,10 @@
 
                             <div class="hero-text text-center">
 
-                                <h1>Nordic Camp - Din leverandør av husvogner, både med og uten plass.</h1>
+                                <h1>Nordic Camp - Din leverandør av husvogner, elementbygg og spikertelt, både med og uten plass.</h1>
 
-                                <p> Nordic Camp AS tilbyr husvogner både med og uten plass, hvor du har muligheten å tilpasse vognen etter ditt ønske og behov. Gjennom oss har du muligheten til å velge mellom flere modeller i forskjellige former, farger og variert interiør. Som kunde hos Nordic Camp gir vi deg muligheten til å bli med gjennom valgprosessen av materiell fra start til slutt, eller velge våre ferdige pakker og la oss gjøre jobben for deg.</p>
-                                <h2>Priser fra 499 000,-</h2>
+                                <p> Ønske om ny husvogn? Nordic Camp AS er en norsk leverandør av husvogner, elementbygg og spikertelt. Husvogner kommer både med og uten plass, avhengig av behov. Gjennom oss har du muligheten å skreddersy vognene etter behov og ønsker, eller kjøpe ferdig produkter og la oss gjøre hele jobbern. Våre husvogner har en rekke forskjellige størrelser og muligheter.  </p>
+                                <h2>Priser fra 499 000,-.</h2>
                                 
 
                                 <!-- <div class="quote-form">
@@ -216,7 +216,7 @@
 
                     <div class="col-md-12 col-lg-12 col-sm-12 col-12 text-center">
 
-                        <h2>Kontakt oss i dag!</h2>
+                        <h2><a href="https://www.finn.no/car/caravan/search.html?orgId=9258871&sort=PUBLISHED_DESC"> Se flere av våre husvogner, elementbygg og spikertelt her: </a></h2>
 
                     </div>
 
@@ -310,25 +310,29 @@
 
                             <div class="content-info">
 
-                                <form action="#" method="post">
+                                <form name="myForm" action="mailsent.php" method="post" onsubmit="return validateForm()">
 
                                     <div class="form-group">
 
-                                        <input type="text" name="name" class="form-control" placeholder="Navn">
+                                        <input type="text" name="name" id="name" class="form-control" placeholder="Navn">
+                                        <span id="name_error"></span>
                                     </div>
 
                                     <div class="form-group">
 
-                                        <input type="email" name="email" class="form-control" placeholder="E-post">
-
+                                        <input type="email" name="email" id="email" class="form-control" placeholder="E-post">
+                                        <span id="email_error"></span>
                                     </div>
 
                                     <div class="form-group">
-                                        <textarea class="form-control" rows="4" cols="3" placeholder="Hva gjelder det? "></textarea>
+                                        <textarea class="form-control" name="message" id="message" rows="4" cols="3" placeholder="Hva gjelder det? "></textarea>
+                                        <span id="msg_error"></span>
 
                                     </div>
                                     <div class="form-group">
-                                        <button type="submit" class="btn btn-blue">Send inn </button>
+                                        <button type="submit" class="btn btn-blue" name="submit">Send inn </button>
+                                        <br>
+                                        <span id="success"></span>
                                     </div>
                                 </form>
 
@@ -361,8 +365,8 @@
                                 </div>
 
                                 <div class="content-contact">
-                                    <h3>telefon</h3>
-                                    <p>46 40 40 46</p>
+                                    <h3>Telefon</h3>
+                                    <p><a href="tel:46 40 40 46">46 40 40 46</a></p>
 
                                 </div>
 
@@ -377,7 +381,7 @@
 
                                 <div class="content-contact">
                                     <h3>E-post</h3>
-                                    <p>post@nordiccamp.no</p>
+                                    <p><a href="mailto:post@nordiccamp.no">post@nordiccamp.no</a></p>
 
                                 </div>
 
@@ -454,4 +458,40 @@
     <script src="assets/js/mo.min.js "></script>
     <!-- Main js -->
     <script src="assets/js/main.js "></script>
+
+    <script type="text/javascript">
+
+        function validateForm() {
+     
+            // Validation one
+         var name = document.forms["myForm"]["name"].value;
+             if (name == "") {
+                 document.getElementById('name_error').innerHTML = 'dette feltet kreves';
+                 document.getElementById("name_error").style.color = "red";
+                 document.getElementById("name").style.border = "thin solid red";
+                 return false;
+             }
+     
+          // Validation two
+         var email = document.forms["myForm"]["email"].value;
+             if (email == "") {
+                 document.getElementById('email_error').innerHTML = 'dette feltet kreves';
+                 document.getElementById("email_error").style.color = "red";
+                 document.getElementById("email").style.border = "thin solid red";
+                 return false;
+             }
+
+         // Validation three
+         var message = document.forms["myForm"]["message"].value;
+             if (message == "") {
+                 document.getElementById('msg_error').innerHTML = 'dette feltet kreves';
+                 document.getElementById("msg_error").style.color = "red";
+                 document.getElementById("message").style.border = "thin solid red";
+                 return false;
+             }
+             
+         }
+
+     
+       </script>
 </body>
