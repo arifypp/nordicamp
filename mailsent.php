@@ -2,10 +2,10 @@
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-    $to = "arifypp@gmail.com"; // this is your Email address
+    $to = "post@nordiccamp.no"; // this is your Email address
     $from = $_POST['email']; // this is the sender's Email address
     $first_name = $_POST['name'];
-    $subject = "Ny melding fra 'Sabba Invest AS' ";
+    $subject = "Ny melding fra 'Nordic Camp AS' ";
     $subject2 = "Takk for at du kontaktet oss";
     $message = "Navn: " .$first_name . "\n\n" . $_POST['message'];
     $message2 = "Hello " . $first_name . "\n\n Takk for at du kontaktet oss, vi kontakter deg snart.";
