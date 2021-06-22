@@ -166,7 +166,7 @@ hr.hr {
 }
 
 .bg-color-1 {
-  background-color: #1278aa;
+  background-color: #0CB64C;
 }
 
 /*-------margins padding--------*/
@@ -285,7 +285,7 @@ Buttons
 }
 
 .btn-blue{
-  background-color: #1278aa;
+  background-color: #0CB64C;
   color:#fff!important;
 }
 .btn-blue:hover,.btn-blue:focus{
@@ -306,7 +306,7 @@ Buttons
 .btn-white {
   width: auto;
   background-color: #fff;
-  color: #1278aa;
+  color: #0CB64C;
   border: 1px solid transparent;
 }
 .btn-white:hover,
@@ -316,7 +316,7 @@ Buttons
   color:#fff;
 }
 .btn-green{
- background-color: #1278aa;
+ background-color: #0CB64C;
  color: #fff;
 }
 .btn-green:hover,.btn-green:focus{
@@ -360,13 +360,13 @@ Preloader page
 
  @keyframes loader{
   0%, 100% {
-    box-shadow: -13px 20px 0 #1278aa, 13px 20px 0 rgba(102,102, 255, 0.2), 13px 46px 0 rgba(102,102, 255,0.2), -13px 46px 0 rgba(102,102, 255,0.2); }
+    box-shadow: -13px 20px 0 #0CB64C, 13px 20px 0 rgba(102,102, 255, 0.2), 13px 46px 0 rgba(102,102, 255,0.2), -13px 46px 0 rgba(102,102, 255,0.2); }
     25% {
-      box-shadow: -13px 20px 0 rgba(102,102, 255,0.2), 13px 20px 0 #1278aa, 13px 46px 0 rgba(0102,102, 255,0.2), -13px 46px 0 rgba(102,102, 255,0.2); }
+      box-shadow: -13px 20px 0 rgba(102,102, 255,0.2), 13px 20px 0 #0CB64C, 13px 46px 0 rgba(0102,102, 255,0.2), -13px 46px 0 rgba(102,102, 255,0.2); }
       50% {
-        box-shadow: -13px 20px 0 rgba(102,102, 255,0.2), 13px 20px 0 rgba(102,102, 255,0.2), 13px 46px 0 #1278aa, -13px 46px 0 rgba(102,102, 255,0.2); }
+        box-shadow: -13px 20px 0 rgba(102,102, 255,0.2), 13px 20px 0 rgba(102,102, 255,0.2), 13px 46px 0 #0CB64C, -13px 46px 0 rgba(102,102, 255,0.2); }
         75% {
-          box-shadow: -13px 20px 0 rgba(102,102, 255,0.2), 13px 20px 0 rgba(102,102, 255,0.2), 13px 46px 0 rgba(102,102, 255,0.2), -13px 46px 0 #1278aa; } }
+          box-shadow: -13px 20px 0 rgba(102,102, 255,0.2), 13px 20px 0 rgba(102,102, 255,0.2), 13px 46px 0 rgba(102,102, 255,0.2), -13px 46px 0 #0CB64C; } }
         }
 
 
@@ -435,7 +435,7 @@ Navigation
  transform: translateX(-50%) translateY(-50%);
  width: 22px;
  height: 2px;
- background-color: #1278aa;
+ background-color: #0CB64C;
 }
 .navigation-is-open .menu-nav-trigger .menu-nav-icon{
   left: 50%;
@@ -556,7 +556,7 @@ Navigation
   overflow: hidden;
   height: 100%;
   width: 100%;
-  background-color: #1278aa;
+  background-color: #0CB64C;
   visibility: hidden;
   -webkit-transition: visibility 0s 0.7s;
   -moz-transition: visibility 0s 0.7s;
@@ -734,7 +734,7 @@ Hero
   left: -8px;
   position: relative;
   padding: 0 30px;
-  background-color: #1278aa;
+  background-color: #0CB64C;
   color: #fff;
 }
 .quote-form button:hover,
@@ -766,8 +766,8 @@ Hero
   right: -180px; 
 }
 .slider-image .slick-dots li button {
- background: #1278aa;
- color: #1278aa;
+ background: #0CB64C;
+ color: #0CB64C;
  height: 12px;
  width: 8px;
  border-radius: 50%;
@@ -1027,7 +1027,7 @@ footer p.sucess-message {
 
 }
 #scrollUp{
-  background: #1278aa;
+  background: #0CB64C;
   border-radius:50%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
